@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		813A36EA291AF210006D31C6 /* ElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A36E9291AF210006D31C6 /* ElementView.swift */; };
 		870EA458291433FC00936EB2 /* WRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870EA457291433FC00936EB2 /* WRApp.swift */; };
 		870EA45A291433FC00936EB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870EA459291433FC00936EB2 /* ContentView.swift */; };
 		870EA45C291433FC00936EB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870EA45B291433FC00936EB2 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		813A36E9291AF210006D31C6 /* ElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementView.swift; sourceTree = "<group>"; };
 		870EA454291433FC00936EB2 /* WR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		870EA457291433FC00936EB2 /* WRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRApp.swift; sourceTree = "<group>"; };
 		870EA459291433FC00936EB2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 				870EA459291433FC00936EB2 /* ContentView.swift */,
 				870EA45B291433FC00936EB2 /* Assets.xcassets */,
 				870EA45D291433FC00936EB2 /* Preview Content */,
+				813A36E9291AF210006D31C6 /* ElementView.swift */,
 			);
 			path = WR;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				870EA45A291433FC00936EB2 /* ContentView.swift in Sources */,
+				813A36EA291AF210006D31C6 /* ElementView.swift in Sources */,
 				870EA458291433FC00936EB2 /* WRApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
