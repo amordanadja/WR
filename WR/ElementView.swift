@@ -9,18 +9,21 @@ import SwiftUI
 
 struct ElementView: View {
     var body: some View {
-        VStack {
+        ZStack {
+            Color(red: 48/255, green: 63/255, blue: 129/255).ignoresSafeArea()
+            VStack {
                 Image("logo")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 1000,height: 500)
                     .padding().frame(height: 200)
                 Text("SEJA BEM VINDO\nAO W&R ")
-                .multilineTextAlignment(.center)
-                .font(.custom("Body", size: 24))
-                .foregroundColor(.white)
-            
+                    .multilineTextAlignment(.center)
+                    .font(.custom("Body", size: 24))
+                    .foregroundColor(.white)
+                
             }
+        }
     }
 }
 
