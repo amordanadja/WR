@@ -10,6 +10,8 @@ import SwiftUI
 struct EscolhaDoUsuarioView: View {
     var body: some View {
         VStack {
+            Image("ATIVIDADE DAS SÍLABAS SIMPLES")
+            Image("ATIVIDADE DAS SÍLABAS SIMPLES")
         }
     }
     
