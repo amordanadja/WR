@@ -1,13 +1,13 @@
 //
-//  VogaisView.swift
+//  ConsoantesView.swift
 //  WR
 //
-//  Created by Nadja Maria Nascimento de Souza on 10/11/22.
+//  Created by Ana Beatriz Costa Gomes on 18/11/22.
 //
 
 import SwiftUI
 
-struct VogaisView: View {
+struct ConsoantesView: View {
     var body: some View {
         VStack {
             ZStack {
@@ -28,78 +28,64 @@ struct VogaisView: View {
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                 }
-              
+                
             }
             VStack {
                 HStack{
                     Button {
                         print("Imagem tapped!")
                     } label: {
-                        Image("A")
+                        Image("B")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 100, height: 100)
+                            .frame(width: 75, height: 78)
                         
                     }
                     
                     .padding(10)
                     
                     Button {
-                        print("Image tapped!")
+                        print("Imagem tapped!")
                     } label: {
-                        Image("E")
+                        Image("C")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 100, height: 100)
+                            .frame(width: 80, height: 80)
+                        
                     }
                     
                     .padding(10)
+                    
                     Button {
-                        print("Image tapped!")
+                        print("Imagem tapped!")
                     } label: {
-                        Image("I")
+                        Image("D")
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 100, height: 100)
+                            .frame(width: 80, height: 80)
+                        
                     }
+                    
+                    .padding(10)
+                    
+                    Button {
+                        print("Imagem tapped!")
+                    } label: {
+                        Image("F")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 80, height: 80)
+                        
+                    }
+                    
                     .padding(10)
                 }
-                       
-                        
-                        HStack{
-                            Button {
-                                print("Image tapped!")
-                            } label: {
-                                Image("O")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 100, height: 100)
-                            }
-                            
-                            .padding()
-                            
-                            Button {
-                                print("Image tapped!")
-                            } label: {
-                                Image("U")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 100, height: 100)
-                            }
-                            
-                        }
-                       
-                        
-                    }
-                
-                
             }
         }
-        
     }
-
-struct VogaisView_Previews: PreviewProvider {
+}
+struct ConsoantesView_Previews: PreviewProvider {
     static var previews: some View {
-        VogaisView()
+        ConsoantesView()
     }
 }
