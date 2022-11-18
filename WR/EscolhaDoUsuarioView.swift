@@ -32,6 +32,23 @@ struct EscolhaDoUsuarioView: View {
                         .font(Font.system(size:15))
                         .padding(.bottom, 22.0)
                 }
+                HStack{
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
+                            .frame(width: 200, height: 30)
+                        Text("VOGAIS")
+                            .foregroundColor(.white)
+                        
+                    }
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
+                            .frame(width: 200, height: 30)
+                        Text("CONSOANTES")
+                            .foregroundColor(.white)
+                    }
+                }
             }
         }
     }
