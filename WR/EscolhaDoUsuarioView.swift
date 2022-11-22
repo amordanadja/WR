@@ -24,29 +24,56 @@ struct EscolhaDoUsuarioView: View {
                         .multilineTextAlignment(.center)
                         .font(Font.system(size:30))
                 }
-                ZStack{
-                    Image(systemName: "message.fill")
-                        .font(Font.system(size:180))
-                        .foregroundColor(.white)
-                    Text("O ALFABETO É\n DIVIDIDO EM\n DOIS GRUPOS:\n AS VOGAIS E AS\n CONSOANTES.")
-                        .font(Font.system(size:15))
-                        .padding(.bottom, 22.0)
-                }
-                HStack{
+                HStack(spacing:-50){
+                    Image("yorrana")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 250, height: 300)
+                
                     ZStack{
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
-                            .frame(width: 200, height: 30)
-                        Text("VOGAIS")
+                        Image(systemName: "message.fill")
+                            .font(Font.system(size:180))
                             .foregroundColor(.white)
-                        
+                        Text("O ALFABETO É\n DIVIDIDO EM\n DOIS GRUPOS:\n AS VOGAIS E AS\n CONSOANTES.")
+                            .font(Font.system(size:15))
+                            .padding(.bottom, 22.0)
                     }
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
-                            .frame(width: 200, height: 30)
-                        Text("CONSOANTES")
-                            .foregroundColor(.white)
+                }
+                HStack(spacing:20){
+                    VStack{
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
+                                .frame(width: 200, height: 30)
+                            Text("VOGAIS")
+                                .foregroundColor(.white)
+                            
+                        }
+                        Button {
+                            print("Image tapped!")
+                        } label: {
+                            Image("vogais")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 200, height: 200)
+                        }
+                    }
+                    VStack{
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
+                                .frame(width: 200, height: 30)
+                            Text("CONSOANTES")
+                                .foregroundColor(.white)
+                        }
+                        Button {
+                            print("Image tapped!")
+                        } label: {
+                            Image("consoantes")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 200, height: 200)
+                        }
                     }
                 }
             }
