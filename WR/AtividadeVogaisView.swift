@@ -30,8 +30,8 @@ struct AtividadeVogaisView: View {
                    
                       
                 }
-                
             }
+           
             
         }
     }

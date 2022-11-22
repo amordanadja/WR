@@ -1,24 +1,25 @@
 //
-//  ConsoantesView.swift
+//  ConsoantesUIView.swift
 //  WR
 //
-//  Created by Ana Beatriz Costa Gomes on 18/11/22.
+//  Created by Ana Beatriz Costa Gomes on 22/11/22.
 //
 
 import SwiftUI
 
-struct ConsoantesView: View {
+struct ConsoantesUIView: View {
     var body: some View {
         VStack {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 25)
-                       .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
-                       .frame(width: 350, height: 70)
-                   Text("O ALFABETO É COMPOSTO POR \nVOGAIS, QUE SÃO:")
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                }
+            ZStack {
+                RoundedRectangle(cornerRadius: 25)
+                    .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
+                    .frame(width: 350, height: 70)
+                Text("O ALFABETO É COMPOSTO POR \nVOGAIS, QUE SÃO:")
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
             }
+            
+            // Grid
             VStack {
                 HStack{
                     Button {
@@ -239,7 +240,7 @@ struct ConsoantesView: View {
                                     
                                 }
                             }
-                            //.padding(10)
+                            .padding(10)
                             
                             HStack{
                                 Button {
@@ -258,9 +259,11 @@ struct ConsoantesView: View {
             }
         }
     }
+}
 
-struct ConsoantesView_Previews: PreviewProvider {
+
+struct ConsoantesUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ConsoantesView()
+        ConsoantesUIView()
     }
 }

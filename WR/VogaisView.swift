@@ -66,37 +66,31 @@ struct VogaisView: View {
                 }
                        
                         
-                        HStack{
-                            Button {
-                                print("Image tapped!")
-                            } label: {
-                                Image("O")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 100, height: 100)
-                            }
-                            
-                            .padding()
-                            
-                            Button {
-                                print("Image tapped!")
-                            } label: {
-                                Image("U")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 100, height: 100)
-                            }
-                            
-                        }
-                       
-                        
+                HStack{
+                    Button {
+                        print("Image tapped!")
+                    } label: {
+                        Image("O")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 100, height: 100)
                     }
-                
-                
+                    
+                    .padding()
+                    
+                    Button {
+                        print("Image tapped!")
+                    } label: {
+                        Image("U")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 100, height: 100)
+                    }
+                }
             }
         }
-        
     }
+}
 
 struct VogaisView_Previews: PreviewProvider {
     static var previews: some View {
