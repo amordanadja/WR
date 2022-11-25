@@ -9,7 +9,7 @@ import SwiftUI
 
 struct VogaisView: View {
     var body: some View {
-        VStack {
+        VStack{
             ZStack {
                 LinearGradient(gradient: Gradient(colors:
                                                     [Color(red: 34/255, green: 66/255, blue: 128/255),
@@ -28,9 +28,8 @@ struct VogaisView: View {
                         .foregroundColor(.white)
                         .multilineTextAlignment(.center)
                 }
-              
             }
-            VStack {
+            VStack(spacing:30) {
                 HStack{
                     Button {
                         print("Imagem tapped!")
@@ -64,8 +63,8 @@ struct VogaisView: View {
                     }
                     .padding(10)
                 }
-                       
-                        
+                
+                
                 HStack{
                     Button {
                         print("Image tapped!")
@@ -86,6 +85,7 @@ struct VogaisView: View {
                             .scaledToFit()
                             .frame(width: 100, height: 100)
                     }
+                    
                 }
             }
         }
