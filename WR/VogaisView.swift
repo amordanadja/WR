@@ -92,8 +92,23 @@ struct VogaisView: View {
     }
 }
 
+struct vogais: View {
+    var body: some View{
+        VStack{
+            TabView{
+                ContentView()
+                EscolhaDoUsuarioView()
+                VogaisView()
+                AtividadeVogaisView()
+                ConsoantesUIView()
+            }
+            .tabViewStyle(.page(indexDisplayMode: .always))
+        }.background().ignoresSafeArea()
+    }
+}
+
 struct VogaisView_Previews: PreviewProvider {
     static var previews: some View {
-        VogaisView()
+        vogais()
     }
 }
