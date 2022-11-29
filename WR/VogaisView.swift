@@ -95,14 +95,14 @@ struct VogaisView: View {
 struct vogais: View {
     var body: some View{
         VStack{
-            TabView{
-                ContentView()
-                EscolhaDoUsuarioView()
-                VogaisView()
-                AtividadeVogaisView()
-                ConsoantesUIView()
+         TabView{
+          ContentView()
+          EscolhaDoUsuarioView()
+          VogaisView()
+          AtividadeVogaisView()
+          ConsoantesUIView()
             }
-            .tabViewStyle(.page(indexDisplayMode: .always))
+         .tabViewStyle(.page(indexDisplayMode: .always))
         }.background().ignoresSafeArea()
     }
 }

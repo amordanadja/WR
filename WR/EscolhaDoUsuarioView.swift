@@ -49,14 +49,16 @@ struct EscolhaDoUsuarioView: View {
                                 .foregroundColor(.white)
                             
                         }
-                        Button {
-                            print("Image tapped!")
-                        } label: {
-                            Image("vogais")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 200, height: 200)
-                        }
+                        NavigationLink(
+                            destination: { VogaisView() },
+                            label: {
+                                Image("vogais")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 200, height: 200)
+                            }
+                        )
+                        
                     }
                     VStack{
                         ZStack{
@@ -66,14 +68,15 @@ struct EscolhaDoUsuarioView: View {
                             Text("CONSOANTES")
                                 .foregroundColor(.white)
                         }
-                        Button {
-                            print("Image tapped!")
-                        } label: {
-                            Image("consoantes")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 200, height: 200)
-                        }
+                        NavigationLink(
+                            destination: { ConsoantesUIView() },
+                            label: {
+                                Image("consoantes")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 200, height: 200)
+                            }
+                            )
                     }
                 }
             }

@@ -9,9 +9,21 @@ import SwiftUI
 
 @main
 struct WRApp: App {
+    
+    @State var tapped: Bool = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if !tapped {
+                ContentView()
+                    .onTapGesture {
+                        tapped = true
+                    }
+            } else {
+                NavigationStack {
+                    EscolhaDoUsuarioView()
+                }
+            }
         }
     }
 }
