@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ConsoantesUIView: View {
+    
+    let consoantes = Array ( arrayLiteral: "B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "W", "X", "Y", "Z" )
+    
     var body: some View {
         
         VStack {
@@ -31,256 +34,51 @@ struct ConsoantesUIView: View {
                             .multilineTextAlignment(.center)
                     }
                     .padding(50)
-             
-                    VStack {
-                        HStack{
-                            Button {
-                                print("Imagem tapped!")
-                            } label: {
-                                Image("B")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 75, height: 78)
-                                
-                            }
                             
-                            
-                            Button {
-                                print("Imagem tapped!")
-                            } label: {
-                                Image("C")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 80, height: 80)
-                                
-                            }
-                            
-                            
-                            Button {
-                                print("Imagem tapped!")
-                            } label: {
-                                Image("D")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 80, height: 80)
-                                
-                            }
-                            
-                            
-                            
-                            Button {
-                                print("Imagem tapped!")
-                            } label: {
-                                Image("F")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 80, height: 80)
-                                
-                            }
-                            
-                            
-                        }
+                    LazyVGrid(
                         
-                        //.padding(10)
+                        columns: Array(repeating:GridItem(spacing:10), count: 4),
+                        spacing: 10
                         
-                        HStack{
-                            Button {
-                                print("Imagem tapped!")
-                            } label: {
-                                Image("G")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 80, height: 80)
-                                
-                            }
+                    ){
+                      
+                        ForEach(_: consoantes, id: \.self) { consoante in
                             
                             Button {
-                                print("Imagem tapped!")
+                                print(consoante)
                             } label: {
-                                Image("H")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 80, height: 80)
-                                
-                            }
-                            
-                            Button {
-                                print("Imagem tapped!")
-                            } label: {
-                                Image("J")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 80, height: 80)
-                                
-                            }
-                            
-                            Button {
-                                print("Imagem tapped!")
-                            } label: {
-                                Image("K")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 75, height: 75)
-                                
-                            }
-                            
-                            
-                        }
-                        //.padding(20)
-                        
-                        
-                        VStack{
-                            HStack{
-                                Button {
-                                    print("Imagem tapped!")
-                                } label: {
-                                    Image("L")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 75, height: 75)
+                                ZStack {
+                                    Rectangle()
+                                        .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
+                                        .aspectRatio(1, contentMode: .fit)
+                                        .cornerRadius(30)
                                     
-                                }
-                                Button {
-                                    print("Imagem tapped!")
-                                } label: {
-                                    Image("M")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 75, height: 75)
-                                    
-                                }
-                                Button {
-                                    print("Imagem tapped!")
-                                } label: {
-                                    Image("N")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 75, height: 75)
-                                    
-                                }
-                                Button {
-                                    print("Imagem tapped!")
-                                } label: {
-                                    Image("P")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 75, height: 75)
-                                    
-                                }
-                            }
-                            //.padding(20)
-                            
-                            
-                            VStack{
-                                HStack{
-                                    Button {
-                                        print("Imagem tapped!")
-                                    } label: {
-                                        Image("Q")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 75, height: 75)
+                                    Text("\(consoante)")
+                                        .foregroundColor(.white)
+                                        .font(.title)
+                                        .bold()
                                         
-                                    }
-                                    Button {
-                                        print("Imagem tapped!")
-                                    } label: {
-                                        Image("R")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 75, height: 75)
-                                        
-                                    }
-                                    Button {
-                                        print("Imagem tapped!")
-                                    } label: {
-                                        Image("S")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 75, height: 75)
-                                        
-                                    }
-                                    Button {
-                                        print("Imagem tapped!")
-                                    } label: {
-                                        Image("T")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .frame(width: 75, height: 75)
-                                        
-                                    }
-                                }
-                                //.padding(20)
-                                
-                                
-                                VStack{
-                                    HStack{
-                                        Button {
-                                            print("Imagem tapped!")
-                                        } label: {
-                                            Image("V")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 75, height: 75)
-                                            
-                                        }
-                                        Button {
-                                            print("Imagem tapped!")
-                                        } label: {
-                                            Image("W")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 75, height: 75)
-                                            
-                                        }
-                                        Button {
-                                            print("Imagem tapped!")
-                                        } label: {
-                                            Image("X")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 75, height: 75)
-                                            
-                                        }
-                                        Button {
-                                            print("Imagem tapped!")
-                                        } label: {
-                                            Image("W")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 75, height: 75)
-                                            
-                                        }
-                                    }
-                                    .padding(10)
                                     
-                                    HStack{
-                                        Button {
-                                            print("Imagem tapped!")
-                                        } label: {
-                                            Image("Z")
-                                                .resizable()
-                                                .scaledToFit()
-                                                .frame(width: 80, height: 80)
-                                            
-                                        }
-                                    }
                                 }
                             }
                         }
                     }
+                        .padding()
+                    
+                    
+                    
+                    
                 }
+                
             }
+            
+            
         }
-        
-        
-      
+        .ignoresSafeArea()
     }
-    
-}
-
-struct ConsoantesUIView_Previews: PreviewProvider {
-    static var previews: some View {
-        ConsoantesUIView()
+    struct ConsoantesUIView_Previews: PreviewProvider {
+        static var previews: some View {
+            ConsoantesUIView()
+        }
     }
 }
