@@ -109,6 +109,6 @@ struct vogais: View {
 
 struct VogaisView_Previews: PreviewProvider {
     static var previews: some View {
-        vogais()
-    }
+vogais()
+  }
 }
