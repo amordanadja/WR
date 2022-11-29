@@ -74,6 +74,7 @@ struct ConsoantesUIView: View {
             
             
         }
+        .ignoresSafeArea()
     }
     struct ConsoantesUIView_Previews: PreviewProvider {
         static var previews: some View {

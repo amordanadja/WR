@@ -9,7 +9,7 @@ import SwiftUI
 
 struct VogaisView: View {
     var body: some View {
-        VStack{
+        VStack() {
             ZStack {
                 LinearGradient(gradient: Gradient(colors:
                                                     [Color(red: 34/255, green: 66/255, blue: 128/255),
