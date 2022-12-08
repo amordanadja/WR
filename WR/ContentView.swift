@@ -22,6 +22,7 @@ struct ContentView: View {
                     VogaisView()
                     AtividadeVogaisView()
                     ConsoantesUIView()
+                    AlfabetoCompletoView()
                 }
                 .tabViewStyle(.page(indexDisplayMode: .always))
             }.background().ignoresSafeArea()

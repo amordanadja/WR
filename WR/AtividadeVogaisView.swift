@@ -7,7 +7,10 @@
 
 import SwiftUI
 
+
 struct AtividadeVogaisView: View {
+    let atividadeVogal = "A"
+    
     var body: some View {
         VStack {
             ZStack {
@@ -19,26 +22,76 @@ struct AtividadeVogaisView: View {
                                startPoint: .topLeading,
                                endPoint: .bottomLeading)
                 .ignoresSafeArea(.all, edges: .all)
-                
-                ZStack {
-                    RoundedRectangle(cornerRadius: 25)
-                        .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
-                        .frame(width: 350, height: 70)
-                    Text("ATIVIDADE")
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                   
-                      
+                VStack{
+                    HStack {
+                        Spacer()
+                        button_de_som()
+                            .padding()
+                    }
+                    Spacer()
+                    ZStack {
+                        
+                        
+                        RoundedRectangle(cornerRadius: 25)
+                            .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
+                            .frame(width: 350, height: 70)
+                        Text("ATIVIDADE")
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                    }
+                    Text("QUAL O SOM DESSA VOGAL?")
+                        .padding(100)
+                    
+                    
+                    
+                    Button {
+                        print(atividadeVogal)
+                    } label: {
+                        ZStack {
+                            Rectangle()
+                                .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
+                                .aspectRatio(1, contentMode: .fit)
+                                .cornerRadius(20)
+                            
+                            Text("\(atividadeVogal)")
+                                .foregroundColor(.white)
+                                .font(.system(size: 100))
+                                .bold()
+                        }
+                        .frame(width: 180, height: 220)
+                    }
+                    
+                    Spacer()
+                    
+                    
                 }
+                
             }
-           
+            
             
         }
     }
+}
+
+struct button_de_som: View{
     
-    struct AtividadeVogaisView_Previews: PreviewProvider {
-        static var previews: some View {
-            AtividadeVogaisView()
+    var body: some View{
+        Button {
+            print("a")
+        } label: {
+            Image(systemName: "speaker.wave.3")
+                .foregroundColor(.white)
+                .font(.title)
         }
     }
+    
 }
+
+struct AtividadeVogaisView_Previews: PreviewProvider {
+    static var previews: some View {
+        AtividadeVogaisView()
+    }
+}
+

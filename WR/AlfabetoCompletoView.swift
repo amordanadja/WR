@@ -1,18 +1,17 @@
 //
-//  ConsoantesUIView.swift
+//  AlfabetoCompletoView.swift
 //  WR
 //
-//  Created by Ana Beatriz Costa Gomes on 22/11/22.
+//  Created by Ana Beatriz Costa Gomes on 08/12/22.
 //
 
 import SwiftUI
 
-struct ConsoantesUIView: View {
+struct AlfabetoCompletoView: View {
     
-    let consoantes = Array ( arrayLiteral: "B", "C", "D", "F", "G", "H", "J", "K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "W", "X", "Y", "Z" )
-    
+    let consoantes = Array ( arrayLiteral: "A","B", "C", "D","E", "F", "G", "H","I", "J", "K", "L", "M", "N","O", "P", "Q", "R", "S", "T","U", "V", "W", "X", "Y", "Z" )
+ 
     var body: some View {
-        
         VStack {
             ZStack {
                 LinearGradient(gradient: Gradient(colors:
@@ -28,8 +27,8 @@ struct ConsoantesUIView: View {
                     ZStack {
                         RoundedRectangle(cornerRadius: 25)
                             .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
-                            .frame(width: 350, height: 70)
-                        Text("O ALFABETO É COMPOSTO POR \nCONSOANTES, QUE SÃO:")
+                            .frame(width: 350, height: 100)
+                        Text("AS VOGAIS E CONSOANTES JUNTAS FORMAM O NOSSO ALFABETO, QUE SÃO:")
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
                     }
@@ -37,7 +36,7 @@ struct ConsoantesUIView: View {
                             
                     LazyVGrid(
                         
-                        columns: Array(repeating:GridItem(spacing:10), count: 4),
+                        columns: Array(repeating:GridItem(spacing:10), count: 5),
                         spacing: 10
                         
                     ){
@@ -51,7 +50,7 @@ struct ConsoantesUIView: View {
                                     Rectangle()
                                         .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
                                         .aspectRatio(1, contentMode: .fit)
-                                        .cornerRadius(30)
+                                        .cornerRadius(20)
                                     
                                     Text("\(consoante)")
                                         .foregroundColor(.white)
@@ -76,9 +75,13 @@ struct ConsoantesUIView: View {
         }
         .ignoresSafeArea()
     }
-    struct ConsoantesUIView_Previews: PreviewProvider {
-        static var previews: some View {
-            ConsoantesUIView()
-        }
+            }
+        
+        
+        
+    
+struct AlfabetoCompletoView_Previews: PreviewProvider {
+    static var previews: some View {
+        AlfabetoCompletoView()
     }
 }
