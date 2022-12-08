@@ -29,7 +29,7 @@ struct ConsoantesUIView: View {
                         RoundedRectangle(cornerRadius: 25)
                             .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
                             .frame(width: 350, height: 70)
-                        Text("O ALFABETO É COMPOSTO POR \nVOGAIS, QUE SÃO:")
+                        Text("O ALFABETO É COMPOSTO POR \nCONSOANTES, QUE SÃO:")
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
                     }
