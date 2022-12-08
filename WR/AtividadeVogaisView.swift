@@ -19,19 +19,20 @@ struct AtividadeVogaisView: View {
                                startPoint: .topLeading,
                                endPoint: .bottomLeading)
                 .ignoresSafeArea(.all, edges: .all)
-                
-                ZStack {
-                    RoundedRectangle(cornerRadius: 25)
-                        .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
-                        .frame(width: 350, height: 70)
-                    Text("ATIVIDADE")
-                        .foregroundColor(.white)
-                        .multilineTextAlignment(.center)
-                   
-                      
+                VStack{
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 25)
+                            .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
+                            .frame(width: 350, height: 70)
+                        Text("ATIVIDADE")
+                            .foregroundColor(.white)
+                            .multilineTextAlignment(.center)
+                        
+                        
+                    }
+                    Text("QUAL O SOM DESSA VOGAL?")
                 }
             }
-           
             
         }
     }
