@@ -12,6 +12,14 @@ struct EscolhaDoUsuarioView: View {
         ZStack {
             Color(red: 60/255, green: 94/255, blue: 152/255).ignoresSafeArea()
             VStack {
+                VStack{
+                    HStack {
+                        Spacer()
+                        button_de_som()
+                            .padding()
+                    }
+                }
+                Spacer()
                 ZStack{
                     RoundedRectangle(cornerRadius: 15)
                         .fill(Color(red: 255/255, green: 255/255, blue: 255/255))

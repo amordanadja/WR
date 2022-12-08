@@ -26,6 +26,7 @@ struct ConsoantesUIView: View {
                 
                 VStack {
                     ZStack {
+                        
                         RoundedRectangle(cornerRadius: 25)
                             .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
                             .frame(width: 350, height: 70)
