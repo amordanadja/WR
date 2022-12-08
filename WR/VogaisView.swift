@@ -8,7 +8,7 @@
 import SwiftUI
 import AVFoundation
 
-var player: AVAudioPlayer!
+
 
 struct VogaisView: View {
     

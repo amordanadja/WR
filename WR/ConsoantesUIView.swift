@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+import AVFoundation
+
+var player: AVAudioPlayer!
 
 struct ConsoantesUIView: View {
     
@@ -35,18 +38,19 @@ struct ConsoantesUIView: View {
                             .multilineTextAlignment(.center)
                     }
                     .padding(50)
-                            
+                    
                     LazyVGrid(
                         
                         columns: Array(repeating:GridItem(spacing:10), count: 4),
                         spacing: 10
                         
                     ){
-                      
+                        
                         ForEach(_: consoantes, id: \.self) { consoante in
                             
                             Button {
                                 print(consoante)
+                                playSound(consoante: consoante)
                             } label: {
                                 ZStack {
                                     Rectangle()
@@ -58,28 +62,39 @@ struct ConsoantesUIView: View {
                                         .foregroundColor(.white)
                                         .font(.title)
                                         .bold()
-                                        
+                                    
                                     
                                 }
                             }
                         }
                     }
-                        .padding()
-                    
-                    
-                    
-                    
+                    .padding()
                 }
-                
             }
-            
-            
+   
         }
         .ignoresSafeArea()
     }
-    struct ConsoantesUIView_Previews: PreviewProvider {
-        static var previews: some View {
-            ConsoantesUIView()
+    
+    func playSound(consoante: String) {
+        let url = Bundle.main.url(forResource: consoante,withExtension: "mp3")
+        
+        guard url != nil else{
+            return
         }
+        do {
+            player = try AVAudioPlayer(contentsOf: url!)
+            player?.play()
+            
+        } catch {
+            print("error")
+        }
+    }
+    
+}
+
+struct ConsoantesUIView_Previews: PreviewProvider {
+    static var previews: some View {
+        ConsoantesUIView()
     }
 }

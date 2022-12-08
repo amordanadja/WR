@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct AlfabetoCompletoView: View {
     
@@ -45,6 +46,7 @@ struct AlfabetoCompletoView: View {
                             
                             Button {
                                 print(consoante)
+                                
                             } label: {
                                 ZStack {
                                     Rectangle()

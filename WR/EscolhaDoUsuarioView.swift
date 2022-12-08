@@ -6,8 +6,15 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct EscolhaDoUsuarioView: View {
+    
+    @State var viuVogais: Bool = false
+    
+    @State var viuConsoantes: Bool = false
+    
+    
     var body: some View {
         ZStack {
             Color(red: 60/255, green: 94/255, blue: 152/255).ignoresSafeArea()
@@ -48,44 +55,86 @@ struct EscolhaDoUsuarioView: View {
                     }
                 }
                 HStack(spacing:20){
-                    VStack{
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
-                                .frame(width: 200, height: 30)
-                            Text("VOGAIS")
-                                .foregroundColor(.white)
+                    
+                    if viuVogais, viuConsoantes {
+                        
+                        
+                        VStack{
+                            ZStack{
+                                RoundedRectangle(cornerRadius: 10)
+                                    .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
+                                    .frame(width: 200, height: 30)
+                                Text("ALFABETO")
+                                    .foregroundColor(.white)
+                            }
+                            NavigationLink(
+                                destination: {
+                                    AlfabetoCompletoView()
+                                },
+                                label: {
+                                    Image("consoantes")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 200, height: 200)
+                                }
+                            )
+                        }
+                        
+                        
+                    } else {
+                        
+                        VStack{
+                            ZStack{
+                                RoundedRectangle(cornerRadius: 10)
+                                    .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
+                                    .frame(width: 200, height: 30)
+                                Text("VOGAIS")
+                                    .foregroundColor(.white)
+                                
+                            }
+                            NavigationLink(
+                                destination: {
+                                    VogaisView()
+                                        .onAppear {
+                                            viuVogais = true
+                                        }
+                                },
+                                label: {
+                                    Image("vogais")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 200, height: 200)
+                                }
+                            )
                             
                         }
-                        NavigationLink(
-                            destination: { VogaisView() },
-                            label: {
-                                Image("vogais")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 200, height: 200)
+                        VStack{
+                            ZStack{
+                                RoundedRectangle(cornerRadius: 10)
+                                    .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
+                                    .frame(width: 200, height: 30)
+                                Text("CONSOANTES")
+                                    .foregroundColor(.white)
                             }
-                        )
+                            NavigationLink(
+                                destination: {
+                                    ConsoantesUIView()
+                                        .onAppear {
+                                            viuConsoantes = true
+                                        }
+                                },
+                                label: {
+                                    Image("consoantes")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 200, height: 200)
+                                }
+                            )
+                        }
+                        
                         
                     }
-                    VStack{
-                        ZStack{
-                            RoundedRectangle(cornerRadius: 10)
-                                .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
-                                .frame(width: 200, height: 30)
-                            Text("CONSOANTES")
-                                .foregroundColor(.white)
-                        }
-                        NavigationLink(
-                            destination: { ConsoantesUIView() },
-                            label: {
-                                Image("consoantes")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 200, height: 200)
-                            }
-                            )
-                    }
+                    
                 }
             }
         }
