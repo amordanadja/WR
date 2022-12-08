@@ -6,6 +6,9 @@
 //
 
 import SwiftUI
+import AVFoundation
+
+var player: AVAudioPlayer!
 
 struct VogaisView: View {
     
@@ -43,7 +46,8 @@ struct VogaisView: View {
             
             ForEach(vogais, id: \.self) { vogal in
                 Button {
-                    print (vogal)
+                    print(vogal)
+                    playSound(vogal: vogal)
                 } label: {
                     ZStack {
                         Rectangle()
@@ -58,12 +62,25 @@ struct VogaisView: View {
                             .font(.title)
                             .bold()
                         
-                        
                     }
                 }
             }
         }
         .padding(30)
+    }
+    
+    func playSound(vogal: String) {
+        let url = Bundle.main.url(forResource: vogal,withExtension: "mp3")
+        
+        guard url != nil else{
+            return
+        }
+        do {
+            player = try AVAudioPlayer(contentsOf: url!)
+            player?.play()
+        } catch {
+            print("error")
+        }
     }
     
     var body: some View {
