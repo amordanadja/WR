@@ -16,6 +16,7 @@ struct ConsoantesUIView: View {
     
     var body: some View {
         
+        
         VStack {
             ZStack {
                 LinearGradient(gradient: Gradient(colors:
@@ -28,6 +29,13 @@ struct ConsoantesUIView: View {
                 .ignoresSafeArea(.all, edges: .all)
                 
                 VStack {
+                    VStack{
+                        HStack {
+                            Spacer()
+                            button_de_som()
+                                .padding()
+                        }}
+                        Spacer()
                     ZStack {
                         
                         RoundedRectangle(cornerRadius: 25)

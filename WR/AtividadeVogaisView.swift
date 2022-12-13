@@ -69,8 +69,12 @@ struct AtividadeVogaisView: View {
                 }
                 
             }
-            
-            
+            HStack {
+                circle_do_som()
+                circle_do_som()
+                circle_do_som()
+                
+            }
         }
     }
 }
@@ -86,7 +90,19 @@ struct button_de_som: View{
                 .font(.title)
         }
     }
+}
+
+struct circle_do_som: View{
     
+    var body: some View{
+        Button {
+            print("som")
+        } label: {
+            Image(systemName: "speaker.wave.2.circle.fill")
+                .foregroundColor(.blue)
+                .font(.title)
+        }
+    }
 }
 
 struct AtividadeVogaisView_Previews: PreviewProvider {

@@ -25,6 +25,13 @@ struct AlfabetoCompletoView: View {
                 .ignoresSafeArea(.all, edges: .all)
                 
                 VStack {
+                    VStack {
+                    HStack {
+                        Spacer()
+                        button_de_som()
+                            .padding()
+                    }}
+                   // Spacer()
                     ZStack {
                         RoundedRectangle(cornerRadius: 25)
                             .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
