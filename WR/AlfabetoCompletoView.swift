@@ -53,7 +53,7 @@ struct AlfabetoCompletoView: View {
                             
                             Button {
                                 print(consoante)
-                                
+                                playSound(consoante: consoante)
                             } label: {
                                 ZStack {
                                     Rectangle()
@@ -83,6 +83,20 @@ struct AlfabetoCompletoView: View {
             
         }
         .ignoresSafeArea()
+    }
+    func playSound(consoante: String) {
+        let url = Bundle.main.url(forResource: consoante,withExtension: "mp3")
+        
+        guard url != nil else{
+            return
+        }
+        do {
+            player = try AVAudioPlayer(contentsOf: url!)
+            player?.play()
+            
+        } catch {
+            print("error")
+        }
     }
             }
         
