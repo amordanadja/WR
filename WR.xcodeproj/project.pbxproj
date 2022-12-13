@@ -49,7 +49,8 @@
 		87D076A2292D446E00451A6B /* ConsoantesUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87D076A1292D446E00451A6B /* ConsoantesUIView.swift */; };
 		AA34E08F291D62FE00E328D9 /* EscolhaDoUsuarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA34E08E291D62FE00E328D9 /* EscolhaDoUsuarioView.swift */; };
 		AA34E091291D67AE00E328D9 /* VogaisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA34E090291D67AE00E328D9 /* VogaisView.swift */; };
-		AA6C530F29490B7D003745E2 /* AtividadeConsoantesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6C530E29490B7D003745E2 /* AtividadeConsoantesView.swift */; };
+		AA6C530F29490B7D003745E2 /* (null) in Sources */ = {isa = PBXBuildFile; };
+		EDFF8CFA294918A6004F49AF /* AtividadeAlfabetoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8D19962949110600FF3223 /* AtividadeAlfabetoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -175,7 +176,6 @@
 				AA34E090291D67AE00E328D9 /* VogaisView.swift */,
 				87B8A7452927F72A009BE851 /* AtividadeVogaisView.swift */,
 				87D076A1292D446E00451A6B /* ConsoantesUIView.swift */,
-				AA6C530E29490B7D003745E2 /* AtividadeConsoantesView.swift */,
 				871F4208294265A400D58C72 /* AlfabetoCompletoView.swift */,
 				ED8D19962949110600FF3223 /* AtividadeAlfabetoView.swift */,
 				870EA45B291433FC00936EB2 /* Assets.xcassets */,
@@ -295,8 +295,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDFF8CFA294918A6004F49AF /* AtividadeAlfabetoView.swift in Sources */,
 				870EA45A291433FC00936EB2 /* ContentView.swift in Sources */,
-				AA6C530F29490B7D003745E2 /* AtividadeConsoantesView.swift in Sources */,
+				AA6C530F29490B7D003745E2 /* (null) in Sources */,
 				871F4209294265A400D58C72 /* AlfabetoCompletoView.swift in Sources */,
 				87B8A7462927F72A009BE851 /* AtividadeVogaisView.swift in Sources */,
 				AA34E091291D67AE00E328D9 /* VogaisView.swift in Sources */,
@@ -304,7 +305,6 @@
 				AA34E08F291D62FE00E328D9 /* EscolhaDoUsuarioView.swift in Sources */,
 				87D076A2292D446E00451A6B /* ConsoantesUIView.swift in Sources */,
 				870EA458291433FC00936EB2 /* WRApp.swift in Sources */,
-				ED8D19972949110600FF3223 /* AtividadeAlfabetoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
