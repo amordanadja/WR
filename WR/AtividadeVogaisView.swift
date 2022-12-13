@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import AVFAudio
 
 
 struct AtividadeVogaisView: View {
@@ -79,11 +80,26 @@ struct button_de_som: View{
     
     var body: some View{
         Button {
-            print("a")
+            playSound(consoante: "escolha")
         } label: {
             Image(systemName: "speaker.wave.3")
                 .foregroundColor(.white)
                 .font(.title)
+        }
+    }
+    
+    func playSound(consoante: String) {
+        let url = Bundle.main.url(forResource: consoante,withExtension: "mp3")
+        
+        guard url != nil else{
+            return
+        }
+        do {
+            player = try AVAudioPlayer(contentsOf: url!)
+            player?.play()
+            
+        } catch {
+            print("error")
         }
     }
     
