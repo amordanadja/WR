@@ -43,26 +43,21 @@ struct AtividadeVogaisView: View {
                         
                     }
                     Text("QUAL O SOM DESSA VOGAL?")
-                        .padding(100)
+                        .font(.system(size: 20))
+                        .padding(80)
                     
-                    
-                    
-                    Button {
-                        print(atividadeVogal)
-                    } label: {
-                        ZStack {
-                            Rectangle()
-                                .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
-                                .aspectRatio(1, contentMode: .fit)
-                                .cornerRadius(20)
-                            
-                            Text("\(atividadeVogal)")
-                                .foregroundColor(.white)
-                                .font(.system(size: 100))
-                                .bold()
-                        }
-                        .frame(width: 180, height: 220)
+                    ZStack {
+                        Rectangle()
+                            .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
+                            .aspectRatio(1, contentMode: .fit)
+                            .cornerRadius(20)
+                        
+                        Text("\(atividadeVogal)")
+                            .foregroundColor(.white)
+                            .font(.system(size: 100))
+                            .bold()
                     }
+                    .frame(width: 180, height: 220)
                     
                     Spacer()
                     
@@ -70,7 +65,7 @@ struct AtividadeVogaisView: View {
                 }
                 
             }
-            HStack {
+            HStack(spacing: 50){
                 circle_do_som()
                 circle_do_som()
                 circle_do_som()
@@ -116,8 +111,13 @@ struct circle_do_som: View{
             print("som")
         } label: {
             Image(systemName: "speaker.wave.2.circle.fill")
-                .foregroundColor(.blue)
+                .resizable()
+                .scaledToFit()
+            
+                .frame(width: 70, height: 200)
+                .foregroundColor(Color(red:41/255, green:56/255, blue:122/255))
                 .font(.title)
+            
         }
     }
     

@@ -50,9 +50,15 @@ struct EscolhaDoUsuarioView: View {
                         Image(systemName: "message.fill")
                             .font(Font.system(size:180))
                             .foregroundColor(.white)
-                        Text("O ALFABETO É\n DIVIDIDO EM\n DOIS GRUPOS:\n AS VOGAIS E AS\n CONSOANTES.")
-                            .font(Font.system(size:15))
-                            .padding(.bottom, 22.0)
+                        Group {
+                            if viuVogais == false || viuConsoantes == false {
+                                Text("O ALFABETO É\n DIVIDIDO EM\n DOIS GRUPOS:\n AS VOGAIS E AS\n CONSOANTES.")
+                            } else {
+                                Text("AGORA TEMOS O\n ALFABETO COM OS\n DOIS GRUPOS JUNTOS,\n AS VOGAIS E\n AS CONSOANTES.")
+                            }
+                        }
+                        .font(Font.system(size:15))
+                        .padding(.bottom, 22.0)
                     }
                 }
                 HStack(spacing:20){
