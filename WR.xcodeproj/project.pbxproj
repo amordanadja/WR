@@ -39,6 +39,7 @@
 		8120D42C2948F39D004B1E73 /* alfabeto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D42B2948F39D004B1E73 /* alfabeto.mp3 */; };
 		8120D43029490D00004B1E73 /* atividadevogal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D42F29490D00004B1E73 /* atividadevogal.mp3 */; };
 		8120D4322949127A004B1E73 /* atividadeconsoante.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D4312949127A004B1E73 /* atividadeconsoante.mp3 */; };
+		8120D434294919B8004B1E73 /* atividadealfabeto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D433294919B8004B1E73 /* atividadealfabeto.mp3 */; };
 		813A36EA291AF210006D31C6 /* ElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A36E9291AF210006D31C6 /* ElementView.swift */; };
 		870EA458291433FC00936EB2 /* WRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870EA457291433FC00936EB2 /* WRApp.swift */; };
 		870EA45A291433FC00936EB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870EA459291433FC00936EB2 /* ContentView.swift */; };
@@ -86,6 +87,7 @@
 		8120D42B2948F39D004B1E73 /* alfabeto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alfabeto.mp3; sourceTree = "<group>"; };
 		8120D42F29490D00004B1E73 /* atividadevogal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = atividadevogal.mp3; sourceTree = "<group>"; };
 		8120D4312949127A004B1E73 /* atividadeconsoante.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = atividadeconsoante.mp3; sourceTree = "<group>"; };
+		8120D433294919B8004B1E73 /* atividadealfabeto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = atividadealfabeto.mp3; sourceTree = "<group>"; };
 		813A36E9291AF210006D31C6 /* ElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementView.swift; sourceTree = "<group>"; };
 		870EA454291433FC00936EB2 /* WR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		870EA457291433FC00936EB2 /* WRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRApp.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				8120D4292948F1AE004B1E73 /* consoante.mp3 */,
 				8120D4312949127A004B1E73 /* atividadeconsoante.mp3 */,
 				8120D42B2948F39D004B1E73 /* alfabeto.mp3 */,
+				8120D433294919B8004B1E73 /* atividadealfabeto.mp3 */,
 			);
 			path = Sons;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				8120D4022948A586004B1E73 /* J.mp3 in Resources */,
 				8120D43029490D00004B1E73 /* atividadevogal.mp3 in Resources */,
 				8120D3F22948A278004B1E73 /* B.mp3 in Resources */,
+				8120D434294919B8004B1E73 /* atividadealfabeto.mp3 in Resources */,
 				8120D3FE2948A513004B1E73 /* I.mp3 in Resources */,
 				8120D4262948DDB5004B1E73 /* escolha.mp3 in Resources */,
 				8120D41A2948A827004B1E73 /* V.mp3 in Resources */,

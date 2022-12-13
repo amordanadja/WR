@@ -29,7 +29,7 @@ struct AtividadeAlfabetoView: View {
                 VStack(spacing:-25){
                     HStack {
                         Spacer()
-                        button_de_som(soundName: "atividadevogal")
+                        button_de_som(soundName: "atividadealfabeto")
                             .padding()
                     }
                     Spacer()
