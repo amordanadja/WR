@@ -23,6 +23,8 @@ struct WRApp: App {
                 NavigationStack {
                     EscolhaDoUsuarioView()
                 }
+                .accentColor(.white)
+                
             }
         }
     }
