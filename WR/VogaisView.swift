@@ -84,44 +84,26 @@ struct VogaisView: View {
     }
     
     var body: some View {
-        VStack() {
-            ZStack {
-                backgroundGradient()
-                
-                VStack(alignment: .center, spacing: 90) {
-                    textBox()
-                    gridvogais()
-                }
-            }
+        ZStack {
+            backgroundGradient()
             
+            VStack(alignment: .center, spacing: 90) {
+                textBox()
+                gridvogais()
+            }
         }
-        
+        .overlay(alignment: .topTrailing) {
+            button_de_som(soundName: "vogais")
+                .padding()
+        }
         
     }
     
     
-    
-    
-    
-    
-    struct Vogais: View {
-        var body: some View{
-            VStack{
-                TabView{
-                    ContentView()
-                    EscolhaDoUsuarioView()
-                    VogaisView()
-                    AtividadeVogaisView()
-                    ConsoantesUIView()
-                }
-                .tabViewStyle(.page(indexDisplayMode: .always))
-            }.background().ignoresSafeArea()
-        }
-    }
-    
-    struct VogaisView_Previews: PreviewProvider {
-        static var previews: some View {
-            Vogais()
-        }
+}
+
+struct VogaisView_Previews: PreviewProvider {
+    static var previews: some View {
+        VogaisView()
     }
 }

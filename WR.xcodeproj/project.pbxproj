@@ -32,11 +32,12 @@
 		8120D41E2948A831004B1E73 /* X.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D41D2948A831004B1E73 /* X.mp3 */; };
 		8120D4202948A837004B1E73 /* Y.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D41F2948A837004B1E73 /* Y.mp3 */; };
 		8120D4222948A83B004B1E73 /* Z.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D4212948A83B004B1E73 /* Z.mp3 */; };
-		8120D4242948A926004B1E73 /* WhatsApp Audio 2022-12-13 at 08.49.16 (online-audio-converter.com).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D4232948A926004B1E73 /* WhatsApp Audio 2022-12-13 at 08.49.16 (online-audio-converter.com).mp3 */; };
+		8120D4242948A926004B1E73 /* A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D4232948A926004B1E73 /* A.mp3 */; };
 		8120D4262948DDB5004B1E73 /* escolha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D4252948DDB5004B1E73 /* escolha.mp3 */; };
 		8120D4282948F149004B1E73 /* vogais.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D4272948F149004B1E73 /* vogais.mp3 */; };
 		8120D42A2948F1AE004B1E73 /* consoante.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D4292948F1AE004B1E73 /* consoante.mp3 */; };
 		8120D42C2948F39D004B1E73 /* alfabeto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D42B2948F39D004B1E73 /* alfabeto.mp3 */; };
+		8120D43029490D00004B1E73 /* atividadevogal.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D42F29490D00004B1E73 /* atividadevogal.mp3 */; };
 		813A36EA291AF210006D31C6 /* ElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A36E9291AF210006D31C6 /* ElementView.swift */; };
 		870EA458291433FC00936EB2 /* WRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870EA457291433FC00936EB2 /* WRApp.swift */; };
 		870EA45A291433FC00936EB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870EA459291433FC00936EB2 /* ContentView.swift */; };
@@ -76,11 +77,12 @@
 		8120D41D2948A831004B1E73 /* X.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = X.mp3; sourceTree = "<group>"; };
 		8120D41F2948A837004B1E73 /* Y.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Y.mp3; sourceTree = "<group>"; };
 		8120D4212948A83B004B1E73 /* Z.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Z.mp3; sourceTree = "<group>"; };
-		8120D4232948A926004B1E73 /* WhatsApp Audio 2022-12-13 at 08.49.16 (online-audio-converter.com).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "WhatsApp Audio 2022-12-13 at 08.49.16 (online-audio-converter.com).mp3"; sourceTree = "<group>"; };
+		8120D4232948A926004B1E73 /* A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = A.mp3; sourceTree = "<group>"; };
 		8120D4252948DDB5004B1E73 /* escolha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = escolha.mp3; sourceTree = "<group>"; };
 		8120D4272948F149004B1E73 /* vogais.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vogais.mp3; sourceTree = "<group>"; };
 		8120D4292948F1AE004B1E73 /* consoante.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = consoante.mp3; sourceTree = "<group>"; };
 		8120D42B2948F39D004B1E73 /* alfabeto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alfabeto.mp3; sourceTree = "<group>"; };
+		8120D42F29490D00004B1E73 /* atividadevogal.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = atividadevogal.mp3; sourceTree = "<group>"; };
 		813A36E9291AF210006D31C6 /* ElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementView.swift; sourceTree = "<group>"; };
 		870EA454291433FC00936EB2 /* WR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		870EA457291433FC00936EB2 /* WRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRApp.swift; sourceTree = "<group>"; };
@@ -109,7 +111,7 @@
 		813BDADD29426D810020A39E /* Sons */ = {
 			isa = PBXGroup;
 			children = (
-				8120D4232948A926004B1E73 /* WhatsApp Audio 2022-12-13 at 08.49.16 (online-audio-converter.com).mp3 */,
+				8120D4232948A926004B1E73 /* A.mp3 */,
 				8120D3F12948A278004B1E73 /* B.mp3 */,
 				8120D3F32948A2DE004B1E73 /* C.mp3 */,
 				8120D3F52948A31A004B1E73 /* D.mp3 */,
@@ -137,6 +139,7 @@
 				8120D4212948A83B004B1E73 /* Z.mp3 */,
 				8120D4252948DDB5004B1E73 /* escolha.mp3 */,
 				8120D4272948F149004B1E73 /* vogais.mp3 */,
+				8120D42F29490D00004B1E73 /* atividadevogal.mp3 */,
 				8120D4292948F1AE004B1E73 /* consoante.mp3 */,
 				8120D42B2948F39D004B1E73 /* alfabeto.mp3 */,
 			);
@@ -265,6 +268,7 @@
 				8120D4182948A757004B1E73 /* U.mp3 in Resources */,
 				8120D4102948A736004B1E73 /* Q.mp3 in Resources */,
 				8120D4022948A586004B1E73 /* J.mp3 in Resources */,
+				8120D43029490D00004B1E73 /* atividadevogal.mp3 in Resources */,
 				8120D3F22948A278004B1E73 /* B.mp3 in Resources */,
 				8120D3FE2948A513004B1E73 /* I.mp3 in Resources */,
 				8120D4262948DDB5004B1E73 /* escolha.mp3 in Resources */,
@@ -273,7 +277,7 @@
 				8120D4202948A837004B1E73 /* Y.mp3 in Resources */,
 				8120D41C2948A82C004B1E73 /* W.mp3 in Resources */,
 				8120D4162948A74E004B1E73 /* T.mp3 in Resources */,
-				8120D4242948A926004B1E73 /* WhatsApp Audio 2022-12-13 at 08.49.16 (online-audio-converter.com).mp3 in Resources */,
+				8120D4242948A926004B1E73 /* A.mp3 in Resources */,
 				8120D4082948A667004B1E73 /* M.mp3 in Resources */,
 				870EA45C291433FC00936EB2 /* Assets.xcassets in Resources */,
 			);

@@ -26,7 +26,7 @@ struct AtividadeVogaisView: View {
                 VStack{
                     HStack {
                         Spacer()
-                        button_de_som()
+                        button_de_som(soundName: "atividadevogal")
                             .padding()
                     }
                     Spacer()
@@ -77,9 +77,11 @@ struct AtividadeVogaisView: View {
 
 struct button_de_som: View {
     
+    let soundName: String
+    
     var body: some View{
         Button {
-            playSound(consoante: "escolha")
+            playSound(consoante: soundName)
         } label: {
             Image(systemName: "speaker.wave.3")
                 .foregroundColor(.white)

@@ -22,7 +22,7 @@ struct EscolhaDoUsuarioView: View {
                 VStack{
                     HStack {
                         Spacer()
-                        button_de_som()
+                        button_de_som(soundName: "escolha")
                             .position(x:380,y:50)
 //                        playSound(key: "escolha")
                     }

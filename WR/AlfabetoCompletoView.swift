@@ -11,7 +11,7 @@ import AVFoundation
 struct AlfabetoCompletoView: View {
     
     let consoantes = Array ( arrayLiteral: "A","B", "C", "D","E", "F", "G", "H","I", "J", "K", "L", "M", "N","O", "P", "Q", "R", "S", "T","U", "V", "W", "X", "Y", "Z" )
- 
+    
     var body: some View {
         VStack {
             ZStack {
@@ -25,14 +25,12 @@ struct AlfabetoCompletoView: View {
                 .ignoresSafeArea(.all, edges: .all)
                 
                 VStack {
-                    VStack {
                     HStack {
                         Spacer()
-                        button_de_som()
-                            .padding()
-                        
-                    }}
-                   // Spacer()
+                        button_de_som(soundName: "alfabeto")
+                            .padding(.horizontal, 30)
+                    }
+                    // Spacer()
                     ZStack {
                         RoundedRectangle(cornerRadius: 25)
                             .fill(Color(red: 48/255, green: 63/255, blue: 129/255))
@@ -42,14 +40,14 @@ struct AlfabetoCompletoView: View {
                             .multilineTextAlignment(.center)
                     }
                     .padding(50)
-                            
+                    
                     LazyVGrid(
                         
                         columns: Array(repeating:GridItem(spacing:10), count: 5),
                         spacing: 10
                         
                     ){
-                      
+                        
                         ForEach(_: consoantes, id: \.self) { consoante in
                             
                             Button {
@@ -66,24 +64,20 @@ struct AlfabetoCompletoView: View {
                                         .foregroundColor(.white)
                                         .font(.title)
                                         .bold()
-                                        
+                                    
                                     
                                 }
                             }
                         }
                     }
-                        .padding()
-                    
-                    
-                    
-                    
+                    .padding()
                 }
                 
             }
             
             
         }
-        .ignoresSafeArea()
+//        .ignoresSafeArea()
     }
     func playSound(consoante: String) {
         let url = Bundle.main.url(forResource: consoante,withExtension: "mp3")
@@ -99,11 +93,11 @@ struct AlfabetoCompletoView: View {
             print("error")
         }
     }
-            }
-        
-        
-        
-    
+}
+
+
+
+
 struct AlfabetoCompletoView_Previews: PreviewProvider {
     static var previews: some View {
         AlfabetoCompletoView()
