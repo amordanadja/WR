@@ -80,7 +80,7 @@ struct AtividadeVogaisView: View {
     }
 }
 
-struct button_de_som: View{
+struct button_de_som: View {
     
     var body: some View{
         Button {
@@ -91,17 +91,7 @@ struct button_de_som: View{
                 .font(.title)
         }
     }
-}
-
-struct circle_do_som: View{
     
-    var body: some View{
-        Button {
-            print("som")
-        } label: {
-            Image(systemName: "speaker.wave.2.circle.fill")
-                .foregroundColor(.blue)
-                .font(.title)
     func playSound(consoante: String) {
         let url = Bundle.main.url(forResource: consoante,withExtension: "mp3")
         
@@ -116,6 +106,21 @@ struct circle_do_som: View{
             print("error")
         }
     }
+    
+}
+
+struct circle_do_som: View{
+    
+    var body: some View {
+        Button {
+            print("som")
+        } label: {
+            Image(systemName: "speaker.wave.2.circle.fill")
+                .foregroundColor(.blue)
+                .font(.title)
+        }
+    }
+    
     
 }
 
