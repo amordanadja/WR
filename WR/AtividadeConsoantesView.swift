@@ -28,7 +28,7 @@ struct AtividadeConsoantesView: View {
                 VStack{
                     HStack {
                         Spacer()
-                        button_de_som()
+                        button_de_som(soundName: "atividadeconsoante")
                             .padding()
                     }
                     Spacer()
@@ -47,7 +47,7 @@ struct AtividadeConsoantesView: View {
                         
                     }
                     .padding(30)
-                    Text("ESSE SOM É DE QUAL VOGAL?")
+                    Text("ESSE SOM É DE QUAL CONSOANTE?")
                         .font(.system(size: 20))
                         .padding(60)
                     
