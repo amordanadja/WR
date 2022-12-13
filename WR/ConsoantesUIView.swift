@@ -33,7 +33,7 @@ struct ConsoantesUIView: View {
                         HStack {
                             Spacer()
                             button_de_som()
-                                .padding()
+                                .position(x:380,y:90)
                         }}
                         Spacer()
                     ZStack {

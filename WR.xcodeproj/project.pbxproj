@@ -34,6 +34,9 @@
 		8120D4222948A83B004B1E73 /* Z.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D4212948A83B004B1E73 /* Z.mp3 */; };
 		8120D4242948A926004B1E73 /* WhatsApp Audio 2022-12-13 at 08.49.16 (online-audio-converter.com).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D4232948A926004B1E73 /* WhatsApp Audio 2022-12-13 at 08.49.16 (online-audio-converter.com).mp3 */; };
 		8120D4262948DDB5004B1E73 /* escolha.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D4252948DDB5004B1E73 /* escolha.mp3 */; };
+		8120D4282948F149004B1E73 /* vogais.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D4272948F149004B1E73 /* vogais.mp3 */; };
+		8120D42A2948F1AE004B1E73 /* consoante.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D4292948F1AE004B1E73 /* consoante.mp3 */; };
+		8120D42C2948F39D004B1E73 /* alfabeto.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8120D42B2948F39D004B1E73 /* alfabeto.mp3 */; };
 		813A36EA291AF210006D31C6 /* ElementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813A36E9291AF210006D31C6 /* ElementView.swift */; };
 		870EA458291433FC00936EB2 /* WRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870EA457291433FC00936EB2 /* WRApp.swift */; };
 		870EA45A291433FC00936EB2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870EA459291433FC00936EB2 /* ContentView.swift */; };
@@ -74,6 +77,9 @@
 		8120D4212948A83B004B1E73 /* Z.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Z.mp3; sourceTree = "<group>"; };
 		8120D4232948A926004B1E73 /* WhatsApp Audio 2022-12-13 at 08.49.16 (online-audio-converter.com).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "WhatsApp Audio 2022-12-13 at 08.49.16 (online-audio-converter.com).mp3"; sourceTree = "<group>"; };
 		8120D4252948DDB5004B1E73 /* escolha.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = escolha.mp3; sourceTree = "<group>"; };
+		8120D4272948F149004B1E73 /* vogais.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = vogais.mp3; sourceTree = "<group>"; };
+		8120D4292948F1AE004B1E73 /* consoante.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = consoante.mp3; sourceTree = "<group>"; };
+		8120D42B2948F39D004B1E73 /* alfabeto.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alfabeto.mp3; sourceTree = "<group>"; };
 		813A36E9291AF210006D31C6 /* ElementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementView.swift; sourceTree = "<group>"; };
 		870EA454291433FC00936EB2 /* WR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		870EA457291433FC00936EB2 /* WRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRApp.swift; sourceTree = "<group>"; };
@@ -128,6 +134,9 @@
 				8120D41F2948A837004B1E73 /* Y.mp3 */,
 				8120D4212948A83B004B1E73 /* Z.mp3 */,
 				8120D4252948DDB5004B1E73 /* escolha.mp3 */,
+				8120D4272948F149004B1E73 /* vogais.mp3 */,
+				8120D4292948F1AE004B1E73 /* consoante.mp3 */,
+				8120D42B2948F39D004B1E73 /* alfabeto.mp3 */,
 			);
 			path = Sons;
 			sourceTree = "<group>";
@@ -235,8 +244,10 @@
 				8120D40C2948A692004B1E73 /* O.mp3 in Resources */,
 				8120D4002948A524004B1E73 /* H.mp3 in Resources */,
 				8120D3FC2948A467004B1E73 /* G.mp3 in Resources */,
+				8120D42A2948F1AE004B1E73 /* consoante.mp3 in Resources */,
 				8120D3F82948A347004B1E73 /* E.mp3 in Resources */,
 				8120D40E2948A696004B1E73 /* P.mp3 in Resources */,
+				8120D4282948F149004B1E73 /* vogais.mp3 in Resources */,
 				8120D41E2948A831004B1E73 /* X.mp3 in Resources */,
 				8120D3FA2948A389004B1E73 /* F.mp3 in Resources */,
 				8120D4062948A5BF004B1E73 /* L.mp3 in Resources */,
@@ -247,6 +258,7 @@
 				8120D4222948A83B004B1E73 /* Z.mp3 in Resources */,
 				8120D40A2948A68E004B1E73 /* N.mp3 in Resources */,
 				870EA45F291433FC00936EB2 /* Preview Assets.xcassets in Resources */,
+				8120D42C2948F39D004B1E73 /* alfabeto.mp3 in Resources */,
 				8120D4182948A757004B1E73 /* U.mp3 in Resources */,
 				8120D4102948A736004B1E73 /* Q.mp3 in Resources */,
 				8120D4022948A586004B1E73 /* J.mp3 in Resources */,

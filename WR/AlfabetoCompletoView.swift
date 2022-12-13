@@ -30,6 +30,7 @@ struct AlfabetoCompletoView: View {
                         Spacer()
                         button_de_som()
                             .padding()
+                        
                     }}
                    // Spacer()
                     ZStack {
