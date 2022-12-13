@@ -32,10 +32,12 @@ struct ConsoantesUIView: View {
                     VStack{
                         HStack {
                             Spacer()
-                            button_de_som()
-                                .position(x:380,y:90)
-                        }}
-                        Spacer()
+                            button_de_som(soundName: "consoante")
+                                .position(x:380,y:100)
+                        }
+                        
+                    }
+                    Spacer()
                     ZStack {
                         
                         RoundedRectangle(cornerRadius: 25)
@@ -45,7 +47,7 @@ struct ConsoantesUIView: View {
                             .foregroundColor(.white)
                             .multilineTextAlignment(.center)
                     }
-                    .padding(50)
+                    .padding(40)
                     
                     LazyVGrid(
                         
@@ -79,7 +81,7 @@ struct ConsoantesUIView: View {
                     .padding()
                 }
             }
-   
+            
         }
         .ignoresSafeArea()
     }

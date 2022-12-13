@@ -93,7 +93,7 @@ struct VogaisView: View {
             }
         }
         .overlay(alignment: .topTrailing) {
-            button_de_som()
+            button_de_som(soundName: "vogais")
                 .padding()
         }
         
